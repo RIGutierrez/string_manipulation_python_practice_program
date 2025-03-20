@@ -1,6 +1,6 @@
 while True:
     # ask user to input their full name
-    name = input("Please input your fullname in incorrect casing: ")
+    name = input("Please input your full name in incorrect casing: ").strip()
     
     # check input if invalid
     if not name:
