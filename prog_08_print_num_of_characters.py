@@ -1,9 +1,13 @@
 while True:
+    # ask user to input their fullname
     name = input("Please input your fullname: ").strip()
 
-    break
-print(len(name))
+    # check input if invalid
+    if not name:
+        print("Invalid input. Try again.")
+        continue
 
-# ask user to input their fullname
-# check input if invalid
+    break
+
 # print number of characters
+print(len(name))
