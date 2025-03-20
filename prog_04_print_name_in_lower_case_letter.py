@@ -1,8 +1,13 @@
 while True:
     # ask user to input their fullname
-    user_input = input("Please input your fullname: ").strip()
+    name = input("Please input your fullname: ").strip()
+
+    # check input if valid
+    if not name:
+        print("Invalid input. Try again.")
+        continue
 
     break 
-print(user_input.lower())   
-# check input if valid
+
 # print in lower case letter
+print(name.lower())   
