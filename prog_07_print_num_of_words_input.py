@@ -1,8 +1,13 @@
 while True:
+    # ask user for input
     input_statement = input("Statement: ")
+    
+    # check input if invalid
+    if not input_statement:
+        print("Invalid input. Try again.")
+        continue
 
     break
-print(len(input_statement.split()))
-# ask user for input
-# check input if invalid
+
 # print number of words
+print(len(input_statement.split()))
