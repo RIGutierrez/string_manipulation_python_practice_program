@@ -1,6 +1,6 @@
 while True:
-    # ask user to input their fullname
-    name = input("Please input your fullname: ").strip()
+    # ask user to input their full name
+    name = input("Please input your full name: ").strip()
 
     # check input if invalid
     if not name:
