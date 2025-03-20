@@ -1,9 +1,15 @@
-name = input("name: ")
+while True:
+    # ask user to input their full name 
+    name = input("Please input your fullname in incorrect casing: ")
 
-name_pascal = name.strip().title().replace(" ", "")
+    # check input if invalid
+    if not name:
+        print("Invalid input. Try again.")
+        continue
 
-print(name_pascal)
+    
+    name_pascal = name.strip().title().replace(" ", "")
+    break
 
-# ask user to input their full name 
-# check input if invalid
 # print in pascal case
+print(name_pascal)
