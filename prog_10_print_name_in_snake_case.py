@@ -1,9 +1,15 @@
-name = input("Name: ")
+while True:
+    # ask user to input their full name
+    name = input("Please input your full name in incorrect casing: ")
+    
+    # check input if invalid
+    if not name:
+        print("Invalid input. Try again.")
+        continue
 
-name_snake = name.strip().lower().replace(" ", "_")
+    # convert to snake case
+    name_snake = name.strip().lower().replace(" ", "_")
+    break
 
-print(name_snake)
-
-# ask user to input their full name
-# check input if invalid
 # print in snake case
+print(name_snake)
